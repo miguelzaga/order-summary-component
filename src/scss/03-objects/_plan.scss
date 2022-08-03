@@ -1,0 +1,38 @@
+@use "./../01-abstracts/" as *;
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #f7f9ff;
+  border-radius: 11px;
+  padding: 17px 16px 16px;
+  margin-bottom: 24px;
+
+  &__icon {
+    max-width: 48px;
+  }
+
+  &__text {
+    margin-right: auto;
+  }
+
+  &__name {
+    margin-bottom: 3px;
+  }
+
+  &__price {
+    font-size: rem(14px);
+  }
+
+  &__btn-change {
+    border: none;
+    padding: 0;
+    background-color: unset;
+    font-weight: 700;
+    color: var(--color-highlight);
+    text-decoration: underline;
+    font-size: rem(13px);
+  }
+}
