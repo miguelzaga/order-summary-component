@@ -1,10 +1,14 @@
 // Colors
 :root {
-  --color-bg: #fff;
+  --color-bg: #e0e8ff;
+  --color-font-main: #1f2e55;
+  --color-font-secondary: #717fa6;
+  --color-highlight: #382ae1;
+  --color-card: #fff;
 }
 
 // Fonts
-$font: Arial, Helvetica, sans-serif;
+$font: "Red Hat Display", sans-serif;
 
 // Breakpoints
 $sm: 320px;
