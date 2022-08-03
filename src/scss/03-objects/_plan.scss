@@ -2,6 +2,7 @@
 
 .plan {
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
@@ -34,5 +35,26 @@
     color: var(--color-highlight);
     text-decoration: underline;
     font-size: rem(13px);
+
+    &:hover {
+      color: var(--color-highlight--hover);
+    }
+  }
+
+  @include breakpoint($lg) {
+    padding: 25px 24px;
+    margin-bottom: 32px;
+
+    &__name {
+      margin-bottom: 6px;
+    }
+
+    &__price {
+      font-size: rem(16px);
+    }
+
+    &__btn-change {
+      font-size: rem(14px);
+    }
   }
 }

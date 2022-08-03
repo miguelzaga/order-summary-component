@@ -4,6 +4,7 @@ body {
   font-family: $font;
   font-weight: 500;
   color: var(--color-font-secondary);
+  font-size: rem(15px);
 }
 
 h1 {
@@ -24,4 +25,20 @@ button {
   font-size: rem(15px);
   font-weight: 900;
   color: var(--color-font-secondary);
+}
+
+@include breakpoint($lg) {
+  body {
+    font-size: rem(16px);
+  }
+
+  h1 {
+    font-size: rem(28px);
+    line-height: 37px;
+  }
+
+  h2 {
+    font-size: rem(16px);
+    line-height: 21px;
+  }
 }

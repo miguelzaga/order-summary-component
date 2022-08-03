@@ -1,3 +1,5 @@
+@use "./../01-abstracts/" as *;
+
 .card {
   max-width: 450px;
   background-color: var(--color-card);
@@ -15,8 +17,9 @@
   }
 
   &__description {
-    margin-bottom: 24px;
+    margin: auto auto 24px;
     line-height: 25px;
+    max-width: 263px;
   }
 
   &__btn {
@@ -29,11 +32,40 @@
     border: none;
     padding: 15px;
     border-radius: 11px;
+    line-height: 20px;
+
+    &:hover {
+      background-color: var(--color-highlight--hover);
+    }
   }
 
   &__btn-cancel {
     border: 0;
     padding: 0;
     background: unset;
+
+    &:hover {
+      color: var(--color-font-main);
+    }
+  }
+
+  @include breakpoint($lg) {
+    &__container {
+      padding: 45px 48px 48px;
+    }
+
+    &__title {
+      margin-bottom: 17px;
+    }
+
+    &__description {
+      margin-bottom: 20px;
+      max-width: none;
+      line-height: 26px;
+    }
+
+    &__btn {
+      margin-bottom: 32px;
+    }
   }
 }
